@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="js.jpg">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('back.jpg'); background-size: cover;">
+  <!-- Bootstrap navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
+    <a class="navbar-brand" href="#">Tasks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#task1">Reverse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task2">Alphabet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task3">Triangle <Area></Area></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task4">[*]and[*]</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task4">Swap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task5">Uppercase</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task6">Factorial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#task7">Counting</a>
+        </li>
+
+       
+      </ul>
+    </div>
+  </nav>
+  
+    <div class="container">
+      
+      <div class="task-container" id="task1">
+        <div >
+          <h1>Task 1 - Reverse Number</h1>
+          <label for="numberInput1">Enter a number: </label>
+          <input type="number" id="numberInput1">
+          <button onclick="reverseAndDisplay()">Reverse</button>
+          <div id="result1"></div>
+        </div>
+      </div>
+
+      <div class="task-container" id="task2">
+        <div >
+          <h1>Task 2 - Alphabet Order</h1>
+          <label for="stringInput">Enter a string: </label>
+          <input type="text" id="stringInput">
+          <button onclick="sortAlphabetically()">Sort</button>
+          <div id="result2"></div>
+        </div>
+      </div>
+      
+        <div class="task-container" id="task3">
+          <div >
+            <h1>Task 3 - Area of Triangle</h1>
+            <label for="sideA">Side A: </label>
+            <input type="number" id="sideA">
+            <label for="sideB">Side B: </label>
+            <input type="number" id="sideB">
+            <label for="sideC">Side C: </label>
+            <input type="number" id="sideC">
+            <button onclick="calculateArea()">Calculate</button>
+            <div id="result3"></div>
+          </div> 
+        </div> 
+        
+      <div class="task-container" id="task4">
+        <div >
+          <h1>Task 4 - Multiply and Divide</h1>
+          <label for="num1">Enter the first number: </label>
+          <input type="number" id="num1">
+          <label for="num2">Enter the second number: </label>
+          <input type="number" id="num2">
+          <button onclick="multiplyAndDivide()">Calculate</button>
+          <div id="result4"></div>
+        </div>
+      </div>
+      
+      <div class="task-container" id="task5">
+        <div >
+          <h1>Task 5 - Swap</h1>
+          <label for="aInput">Enter the value of a: </label>
+          <input type="number" id="aInput">
+          <label for="bInput">Enter the value of b: </label>
+          <input type="number" id="bInput">
+          <button onclick="swapValues()">Swap</button>
+          <div id="result5"></div>
+        </div>
+      </div>
+
+      <div class="task-container" id="task6">
+        <div >
+          <h1>Task 6 - Uppercase</h1>
+          <label for="stringToCapitalize">Enter a string: </label>
+          <input type="text" id="stringToCapitalize">
+          <button onclick="capitalizeFirstLetter()">Capitalize</button>
+          <div id="result6"></div>
+        </div>
+      </div>
+
+      <div class="task-container" id="task7">
+        <div >
+          <h1>Task 7 - Factorial</h1>
+          <label for="numberForFactorial">Enter a number for factorial: </label>
+          <input type="number" id="numberForFactorial">
+          <button onclick="calculateFactorial()">Calculate</button>
+          <div id="result7"></div>
+        </div>
+      </div>
+
+      <div class="task-container" id="task8">
+        <div >
+          <h1>Task 8 - Counting Repetition</h1>
+          <label for="wordToCount">Enter a word: </label>
+          <input type="text" id="wordToCount">
+          <label for="letterToCount">Enter the letter to count: </label>
+          <input type="text" id="letterToCount">
+          <button onclick="countRepetitions()">Count</button>
+          <div id="result8"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <footer class="container-fluid custom-footer">
+      <div class="container">
+        <span class="text-muted">Developed By Yasar Mushtaq</span>
+      </div>
+    </footer>
+    
+    
+</body>
+</html>
